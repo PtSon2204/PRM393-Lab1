@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_screen/ui/widgets/ProductWidget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -21,16 +22,18 @@ class HomePage extends StatelessWidget {
           ],
         ),
 
-        body: Center(
-          child: Container(
-            width: MediaQuery.of(context).size.height,
-            height: double.infinity,
-            decoration: BoxDecoration(
-              border: Border.all(width: 1, color: Colors.blue),
-            ),
-            child: Image.asset('assets/images/cx5.png', fit: BoxFit.fill),
-          ),
-        ),
+        // body: Center(
+        //   child: Container(
+        //     width: MediaQuery.of(context).size.height,
+        //     height: double.infinity,
+        //     decoration: BoxDecoration(
+        //       border: Border.all(width: 1, color: Colors.blue),
+        //     ),
+        //     child: Image.asset('assets/images/cx5.png', fit: BoxFit.fill),
+        //   ),
+        // ),
+
+        body: Productwidget(),
 
         backgroundColor: Colors.white,
 
